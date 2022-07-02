@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  height: 100vh;
+  background-color: #303030;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.App {
+  padding-bottom: 60px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.loading-screen {
+  padding-top: 100px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.error-screen {
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.error-screen h1 {
+  font-family: "Righteous";
+}
+
+@media (min-width: 880px) {
+  .container {
+    max-width: 912px;
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    max-width: 380px;
+  }
+}

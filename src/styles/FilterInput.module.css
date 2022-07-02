@@ -1,0 +1,23 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container input {
+  display: inline-block;
+  width: 500px;
+  height: 51px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #212121;
+  font-size: 16px;
+  color: #fff;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1; /* Firefox */
+}
