@@ -10,7 +10,7 @@ export default function ResultsDisplay({ datum }: ResultsDisplayProps) {
       <div className={styles.results}>
         {"results_returned" in datum.results &&
           datum?.results.shop.map((restaurant, index) => (
-            <RestaurantCard restaurant={restaurant} index={index} />
+            <RestaurantCard restaurant={restaurant} key={index} index={index} />
           ))}
       </div>
     </div>
