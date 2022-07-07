@@ -7,9 +7,6 @@ type RestaurantCardProps = {
   index: number;
 };
 
-const first = "#F3CE72";
-const runnerUp = "#EAEAEA";
-
 export default function RestaurantCard({
   restaurant,
   index,
@@ -23,6 +20,7 @@ export default function RestaurantCard({
         <img src={restaurant.photo.pc.l} />
         <div className={styles["catch-copy"]}>{restaurant.catch}</div>
         <div className={styles["bottom-details"]}>
+          {/* to do: show name of shop - different approaches */}
           <a
             href={`https://www.google.com/maps?q=${restaurant.lat},${restaurant.lng}`}
             target="_blank"

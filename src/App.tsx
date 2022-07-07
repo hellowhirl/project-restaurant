@@ -37,16 +37,11 @@ function App() {
     );
   }
 
-  const hasResults =
-    "results_returned" in datum.results
-      ? parseInt(datum.results.results_returned) > 0
-      : false;
-
   return (
     <div className="App">
       <TopTitle />
       <FilterInput debouncedOnChange={debouncedOnChange} />
-      <ResultsCount hasResults={hasResults} datum={datum} query={query} />
+      <ResultsCount datum={datum} query={query} />
       <ResultsDisplay datum={datum} />
     </div>
   );
